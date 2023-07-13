@@ -5,7 +5,7 @@
 uint32_t read_number(char *filename) {
     FILE* file = fopen(filename, "rb");
     if (file == NULL) {
-        prinftf("%s file NOT FOUND!\n", filename);
+        printf("%s file NOT FOUND!\n", filename);
         fclose(file);
         return 0;
     }
